@@ -1,0 +1,107 @@
+﻿@charset utf-8;
+/*reset.css*/
+*{margin:0; padding:0;}
+li{list-style:none; }
+a{text-decoration:none; color:#000;} 
+address, em{font-style:normal;}
+img, button{border:0;}
+body{background:url("../images/body_Bg.png");font-family: 'Varela Round', sans-serif;}
+
+#wrapper{position:relative; width:1200px; height:3200px;  margin:0 auto; overflow:hidden;}
+/* header */
+#header{z-index:-999;width:1200px; height:1020px; background:url("../images/main_Bg.png")no-repeat;}
+	 h1{ display:inline-block;}/* 로고 */
+		 h1 img{ position:absolute; top:35px; left:430px;}/* 로고 이미지 */
+	.gnb{display:inline;}/* 메뉴 */
+		.gnb .L{position:absolute; top:80px; left:150px;}/* 왼쪽 메뉴 */
+			.gnb .nav li{ float:left; }
+			.gnb .L li:first-child{width:70px; margin-right:30px;}
+			.gnb .L li:last-child{width:70px; margin-left:30px;}
+					.L li a{color:#e7d443; font-size:24px; font-weight:bold;}
+					.L li a:hover{color:#7f6ed4;}
+		.gnb .R { display:inline;position:absolute; top:80px; right:150px;}	/* 오른쪽 메뉴 */
+			.gnb .R>li{width:102px; height:20px; }
+			.gnb .R>li:first-child {width:102px; height:20px; margin-right:60px;}
+				.R li a{color:#e7d443; font-size:24px; font-weight:bold;}
+				.R li a:hover{color:#7f6ed4;}
+				.gnb .R li>ul.submenu{position:relative; z-index:10;width:220px;height:250px;display:none;}/* product 하위메뉴 */
+					.gnb .R .submenu li a{ font-family: 'Poor Story', cursive; color:#e7d443;}
+					.gnb .R .submenu li a:hover{color:#7f6ed4; }
+					
+/* header sns */		
+	.sns{display:inline;}
+		.sns ul{position:absolute; top:18px; right:140px;}
+			.sns ul li {float:left; margin:5px; font-size:18px; }
+				.sns ul li a{ color:#e7d443; font-weight:bold;width:30px; height:30px;}
+				.sns ul li a:hover{color:#7f6ed4;font-weight:bold;}
+
+	.main{position:relative;top:0;left:0;}
+		.main img{opacity:0;}
+		.main img:first-child{ position:absolute; top:340px; left:-190px; }
+		.main img:nth-of-type(2){ position:absolute; top:400px; left:0px; }
+		.main img:nth-of-type(3){ position:absolute; top:480px; right:-380px; }
+		.main img:nth-of-type(4){ position:absolute; top:240px; right:-235px; }
+		.main img:nth-of-type(5){ position:absolute; top:310px; right:-240px; }
+		.main img:nth-of-type(6){ position:absolute;top:1560px; left:165px; }
+		.text{position:absolute; top:1640px; left:195px; font-size:28px; color:#e7d443;font-family: 'Corben', cursive; }
+	.mainT{color:#e7d443; font-size:105px; font-weight:bold; font-family: 'Corben', cursive; position:absolute; top:500px; left:280px; }
+	
+/* article */	
+#article{}
+/* article section1 (About) */
+	.section1{background:url(../images/section1_Bg.png)no-repeat; position:relative; top:-120px;width:1200px; height:1170px; }
+		.Left{float:left;}
+			.Left li:first-child{position:absolute; left:-440px; top:700px; font-size:80px;color:#7f6ed4; font-weight:bold;opacity:0;}
+			.Left li:last-child{position:absolute; left:-800px;top:480px; font-size:40px; color:#7f6ed4; text-align:center; line-height:1.2em;}
+			
+		.Right{float:right;}
+			.Right li:first-child{z-index:9999;position:absolute;top:290px; right:40px;}
+			.Right li:last-child{position:absolute;top:110px; right:0px;}
+			
+/* article section2 (Product) */	
+	.section2{ background:url(../images/section2_Bg.png)no-repeat; position:relative; width:1200px; top:-300px; height:1260px;}
+		p{position:absolute; top:320px; left:450px;font-size:80px; color:#e7429a; font-weight:bold;}
+	.section2>div{ width:300px; height:300px;background-color:#fff; outline:3px solid #7f6ed4; float:left;margin-top:560px;}
+			.pro{color:#7f6ed4; font-size:25px;font-weight:bold; font-family: 'Nanum Pen Script', cursive;opacity:1;/* */}
+	
+/* product 이미지 1 */
+	.section2 div:nth-of-type(1){position:relative; margin-left:140px;  margin-right:10px;}
+		.section2 div:nth-of-type(1) img{ margin:15px;}
+		.section2 div:nth-of-type(1) .dino{ display:none; width:300px; height:300px; background-color:#fff;}
+			.section2 div:nth-of-type(1) .Box1{position:absolute; bottom:0px; right:-10px;opacity:0.6;}
+				.section2 div:nth-of-type(1) .Tt1{ display:none;/**/ position:absolute; top:60px; left:50px; width:190px; text-align:center;line-height:1.8em;}
+				.section2 div:nth-of-type(1) .btn{display:none; /**/ position:absolute; bottom:45px; left:65px; width:170px;height:70px; border-radius:45px 45px; background-color:#7f6ed4;font-family: 'Nanum Pen Script', cursive; font-weight:bold; font-size:30px; text-align:center; cursor:pointer;}
+					.section2 div:nth-of-type(1) .btn a{color:#e7429a;}
+/* product 이미지 2 */		
+	.section2 div:nth-of-type(2){position:relative; padding-left:5px;  margin-right:10px; }
+		.section2 div:nth-of-type(2) img{padding-top:60px;margin-bottom:55px;}
+		.section2 div:nth-of-type(2) .dino{ display:none; width:305px; height:300px; background-color:#fff;}
+			.section2 div:nth-of-type(2) .Box2{position:absolute; bottom:0px; right:-10px;opacity:0.6;}
+				.section2 div:nth-of-type(2) .Tt2{ display:none;/**/ position:absolute; top:60px; left:50px; width:190px; text-align:center;line-height:1.8em;}
+				.section2 div:nth-of-type(2) .btn{display:none;/* */ position:absolute; bottom:45px; left:65px; width:170px;height:70px; border-radius:45px 45px; background-color:#7f6ed4;font-family: 'Nanum Pen Script', cursive; font-weight:bold; font-size:30px; text-align:center; cursor:pointer;}
+					.section2 div:nth-of-type(2) .btn a{color:#e7429a;}
+/* product 이미지 3 */				
+	.section2 div:nth-of-type(3){position:relative;padding-left:15px;}
+		.section2 div:nth-of-type(3) img{margin:25px 45px 35px 50px;}
+		.section2 div:nth-of-type(3) .dino{ display:none; width:315px; height:300px; background-color:#fff;}
+			.section2 div:nth-of-type(3) .Box3{position:absolute; bottom:0px; right:-10px;opacity:0.6;}
+				.section2 div:nth-of-type(3) .Tt3{display:none; /**/  position:absolute; top:60px; left:70px; width:190px; text-align:center;line-height:1.8em;}
+				.section2 div:nth-of-type(3) .btn{display:none; /**/position:absolute; bottom:45px; left:70px; width:170px;height:70px; border-radius:45px 45px; background-color:#7f6ed4;font-family: 'Nanum Pen Script', cursive; font-weight:bold; color:#e7429a; font-size:30px; text-align:center; cursor:pointer;}
+					.section2 div:nth-of-type(3) .btn a{color:#e7429a;}
+		
+/*product 화살표*/		
+		.section2 ul{position:relative;top:700px;}
+			.section2 ul li:first-child{position:absolute; left:80px; font-size:50px;}
+			.section2 ul li:last-child{position:absolute; right:60px; font-size:50px;}
+				.section2 ul li a{color:#7f6ed4;}
+				
+ /* footer */				
+footer{clear:both; width:100%;height:248px;background:url(../images/footer_Bg.png)no-repeat;position:relative;bottom:510px;left:0;  font-family: 'Nanum Pen Script', cursive;font-size:18px; }	
+	address{text-align:center;line-height:25px; color:#e7d443;}
+		address>ul li:first-child{padding-top:140px;}
+			address>ul li:last-child{margin-top:18px;}
+			
+/*footer sns*/
+	.footer.Sns {float:right;position:relative;bottom:20px; right:310px;}
+		.footer.Sns li{display:inline;}
+			.footer.Sns li a{color:#e7d443;}
